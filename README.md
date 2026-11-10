@@ -1,5 +1,5 @@
-# Dash Server
-https://api.dashblocks.org
+# PotentiaMod Server
+## Coming soon!
 
 ### Please note that stuff below is a bit deprecated and hasn't every server methods
 
