@@ -34,14 +34,14 @@ jobs:
             -i ~/.ssh/deploy_key \
             -o IdentitiesOnly=yes \
             -o StrictHostKeyChecking=yes \
-            "dash@$SERVER_HOST" 'bash -se' <<'REMOTE'
+            "potentiamod@$SERVER_HOST" 'bash -se' <<'REMOTE'
           set -eu
 
-          bash ~/DashBlocksServer/build_image.sh
+          bash ~/PotentiaModBlocksServer/build_image.sh
 
           systemctl --user daemon-reload
-          systemctl --user restart dash_server.service
-          systemctl --user is-active --quiet dash_server.service
+          systemctl --user restart potentiamod_server.service
+          systemctl --user is-active --quiet potentiamod_server.service
 
           echo "Deployment completed successfully."
           REMOTE
